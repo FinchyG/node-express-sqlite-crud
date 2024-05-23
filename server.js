@@ -1,9 +1,11 @@
 // Create express app
-var express = require("express")
-var app = express()
-var db = require("./database.js")
-var md5 = require("md5")
+var express = require("express");
+var app = express();
+var cors = require('cors');
+var db = require("./database.js");
+var md5 = require("md5");
 
+app.use(cors());
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
