@@ -86,7 +86,7 @@ app.post("/api/user/", (req, res, next) => {
     });
 })
 
-app.patch("/api/user/:id", (req, res, next) => {
+app.put("/api/user/:id", (req, res, next) => {
     var data = {
         name: req.body.name,
         email: req.body.email,
